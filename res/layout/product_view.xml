@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10sp"
+                android:text="fjkfjkvfvfvfvf"
+                android:textColor="@android:color/background_dark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="250dp"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/descriptin_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textSize="20sp"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textStyle="italic"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="50dp"/>
+            <TextView
+                android:id="@+id/price_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="price"
+                android:textSize="20sp"
+                android:textColor="#065A06"
+                android:textStyle="italic"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="80dp"/>
+
+            <ImageView
+                android:id="@+id/pr_view_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mobiles"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

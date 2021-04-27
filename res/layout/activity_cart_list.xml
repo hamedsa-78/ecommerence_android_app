@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart_list">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D1BB2D">
+
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total cost =  "
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/dollar"
+            android:layout_marginLeft="190dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$"
+            android:textStyle="bold"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+    <SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel"
+        android:hint="Search_bar"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="#1E88E5"/>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_menue_Cart"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_margin="4dp"
+            android:layout_marginTop="1dp"
+
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/calc_total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#2DC3D1"
+            android:text="Calculate_total_cost"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/Buy_Cart"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/calc_total_cost"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#32D12D"
+            android:text="Buy"
+            android:textSize="25sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

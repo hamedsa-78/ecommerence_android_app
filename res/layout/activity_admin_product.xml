@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buttons_shape"
+    tools:context=".admin_product">
+
+    <ImageView
+        android:id="@+id/seleect_img"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/select_product_image"
+        android:layout_marginTop="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seleect_img"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <EditText
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="product_name "
+            android:layout_marginTop="40dp"
+           android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/descriptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="descriptions"
+            android:layout_below="@id/product_name"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:inputType="textImeMultiLine"/>
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="price"
+            android:layout_below="@id/descriptions"
+           android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:id="@+id/add_product_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="ADD"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/buttons_shape"
+            android:textColor="#43A047"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

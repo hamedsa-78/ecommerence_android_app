@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bacground_food"
+    tools:context=".sign_up">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        >
+        <EditText
+            android:id="@+id/phone.ed"
+            android:layout_width="wrap_content"
+            android:textColor="#CC1388"
+            android:textStyle="italic"
+            android:textColorHint="#CC1388"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:layout_gravity="center"
+            android:textSize="45dp"
+            />
+
+        <EditText
+            android:id="@+id/user.ed"
+            android:layout_width="250dp"
+            android:textStyle="italic"
+            android:textColor="#0E3D9C"
+            android:textColorHint="#0F32AD"
+            android:layout_height="wrap_content"
+            android:hint="username"
+            android:layout_below="@+id/phone.ed"
+            android:layout_gravity="center"
+            android:textSize="45dp"
+            android:layout_marginTop="10sp"
+            />
+        <EditText
+            android:id="@+id/pass.ed"
+            android:layout_width="250dp"
+            android:textColor="#509C0E"
+            android:textStyle="italic"
+            android:textColorHint="#31AD0F"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:hint="password"
+            android:layout_below="@+id/user.ed"
+            android:layout_gravity="center"
+            android:textSize="45dp"
+            android:layout_marginTop="10dp"
+            />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="#F12C2C"
+                android:textColorHighlight="#C22727"
+                android:layout_marginLeft="70dp"
+                android:textSize="20sp"
+                android:layout_below="@+id/pass.ed"
+                android:layout_marginTop="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="i am admin"
+            android:textColor="#FFB300"
+            android:layout_below="@id/pass.ed"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

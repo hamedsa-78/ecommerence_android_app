@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Show_all_informations">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/pr_image"
+            android:layout_width="150dp"
+            android:layout_height="110dp"
+             android:layout_centerHorizontal="true"
+            android:src="@drawable/profile"/>
+
+
+        <TextView
+            android:id="@+id/pr_name"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttons_shape"
+            android:layout_below="@id/pr_image"
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="#0A0A0A"
+            android:text="product_name"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/pr_description"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="product decription"
+            android:gravity="center"
+            android:background="@drawable/buttons_shape"
+            android:textSize="19sp"
+            android:textColor="#141414"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/pr_name"/>
+
+        <TextView
+            android:id="@+id/pr_price"
+            android:layout_width="200dp"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttons_shape"
+            android:text="product price"
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="#070706"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/pr_description"/>
+
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:id="@+id/elegmant_number_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pr_price"
+            android:layout_centerHorizontal="true"
+            app:initialNumber="1"
+            app:finalNumber="10"
+
+            android:layout_marginTop="20dp"
+            >
+
+
+        </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Finalize_buying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"
+        android:text="Finalize Buying"
+        android:background="#F56C16"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#D5011125"/>
+
+
+
+</RelativeLayout>

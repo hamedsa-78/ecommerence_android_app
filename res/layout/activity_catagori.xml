@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_for_layouts"
+    tools:context=".Catagori">
+
+    <TextView
+        android:id="@+id/add_catagori"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="Add catagori"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20sp"
+        android:textSize="40sp"
+        android:background="@drawable/buttons_shape"
+        android:textColor="#E70658"/>
+
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/add_catagori">
+
+        <ImageView
+            android:id="@+id/hats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hats"
+            android:layout_marginLeft="30sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:id="@+id/glasses"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/glasses"/>
+        <ImageView
+            android:id="@+id/books"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/books"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/mobiles"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/mobiles"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/row1">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoess"
+            android:id="@+id/shoes"
+            android:layout_marginLeft="30sp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tshirt"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/tshirts"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/laptop"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/laptops"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/watches"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/watches"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/row2"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/headphoness"
+            android:layout_marginLeft="30sp"
+            android:id="@+id/headphoness"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sports"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/sports"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30sp"
+            android:id="@+id/female_dresses"
+            android:src="@drawable/female_dresses"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/sweather"
+            android:layout_marginLeft="30sp"
+            android:src="@drawable/sweather"/>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

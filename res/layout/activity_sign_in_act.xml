@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bacground_food"
+    tools:context=".sign_in_act">
+
+
+
+
+    <TextView
+        android:id="@+id/change_log_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log_as_admin"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="140sp"
+        android:textStyle="bold"/>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+
+            >
+
+            <EditText
+                android:id="@+id/phone"
+                android:inputType="phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="phone.N"
+                android:textSize="35sp"
+                android:textColor="#DD1612"
+                android:textColorHint="#D82515"
+                android:layout_gravity="center"
+                />
+
+                <EditText
+
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="username"
+                    android:textSize="35sp"
+                    android:layout_below="@id/phone"
+                    android:textColorHint="#43A047"
+                    android:textColor="#43A047"
+                    />
+
+
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="password"
+                android:layout_below="@id/username"
+                android:textColorHint="#FDD835"
+                android:textColor="#FDD835"
+                android:textSize="35sp"/>
+
+            <Button
+                android:id="@+id/sign_log"
+                android:layout_below="@id/password"
+                android:layout_width="140dp"
+                android:layout_height="60sp"
+                android:textSize="20sp"
+                android:text="Log_in"
+                android:textColor="#D81B60"
+               />
+
+            <TextView
+                android:id="@+id/save_inform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save my information"
+                android:layout_below="@id/sign_log"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#46F3D0"
+                android:layout_marginTop="9dp"/>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/remindchbox"
+                android:layout_below="@id/sign_log"
+                android:layout_toRightOf="@id/save_inform"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+               android:background="#27A4DB58"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
